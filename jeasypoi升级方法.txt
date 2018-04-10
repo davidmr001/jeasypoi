@@ -1,0 +1,26 @@
+jeasypoi(easypoi jeecg独立分支|支持字典)
+
+jeasypoi升级方法：
+```xml
+		 <dependency>
+			<groupId>org.jeecgframework</groupId>
+			<artifactId>jeasypoi-base</artifactId>
+			<version>2.1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jeecgframework</groupId>
+			<artifactId>jeasypoi-web</artifactId>
+			<version>2.1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jeecgframework</groupId>
+			<artifactId>jeasypoi-annotation</artifactId>
+			<version>2.1.4</version>
+		</dependency>
+```
+jeecg 项目中，增加类：
+		org.jeecgframework.easypoi.service.EasypoiDictService
+
+修改spring扫描件：
+       	 增加：<context:component-scan base-package="org.jeecgframework.easypoi.*" />
+		
